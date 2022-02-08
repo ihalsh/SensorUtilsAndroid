@@ -29,9 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.RESUMED) {
-//                binding.textView.text = sensorManager.getSensorList(Sensor.TYPE_ALL)
-//                    .map { "\n${it.name}" }
-//                    .toString()
                 sensorManager.getDataAsFlowFrom(sensor).collect {
                     binding.textView.text = it.first().toString()
                 }
