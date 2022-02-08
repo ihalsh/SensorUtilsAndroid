@@ -44,7 +44,8 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
-    implementation project(path: ':sensor-utils')
+
+    implementation 'com.github.ihalsh:SensorUtilsAndroid:0.1.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
